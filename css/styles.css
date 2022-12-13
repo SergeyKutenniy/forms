@@ -18,6 +18,7 @@ button {
   display: block;
   margin: 0 auto;
   width: 200px;
+  border: 1px solid #2a2a2a;
   border-radius: 10px;
   padding: 5px;
 }
@@ -170,4 +171,14 @@ input::placeholder {
 .contact-form-input:focus ~ .icon,
 .contact-form-input:not(:placeholder-shown) ~ .icon {
   fill: #2196f3;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-main-group {
+  display: flex;
+  justify-content: space-around;
 }
