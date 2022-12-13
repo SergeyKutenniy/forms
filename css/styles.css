@@ -103,8 +103,7 @@ input::placeholder {
 
 .contact-form-input {
   width: 100%;
-  padding: 6px 10px;
-  margin-bottom: 20px;
+  padding: 6px 10px 6px 30px;
 }
 
 .contact-form-input:focus {
@@ -129,10 +128,15 @@ input::placeholder {
 
 /* ---------------------Форма №3-------------------- */
 
+.form-input {
+  margin-bottom: 20px;
+}
+
 .form-label {
   position: absolute;
-  top: 13%;
+  top: 50%;
   left: 30px;
+  transform: translateY(-50%);
   transition: transform 200ms linear, color 200ms linear;
 }
 
@@ -140,16 +144,30 @@ input::placeholder {
   position: relative;
 }
 
+.contact-form-input {
+  transition: border-color 200ms linear;
+}
+
 .contact-form-input:focus + .form-label,
 .contact-form-input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-30px) translateX(-20px);
+  transform: translateY(-35px) translateX(-20px);
   color: #2196f3;
 }
 
+.contact-form-input:focus {
+  border-color: #2196f3;
+}
+
 .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: inline-block;
-  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transition: fill 200ms linear;
+  transform: translateY(-50%);
+}
+
+.contact-form-input:focus ~ .icon,
+.contact-form-input:not(:placeholder-shown) ~ .icon {
+  fill: #2196f3;
 }
