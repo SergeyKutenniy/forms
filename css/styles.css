@@ -98,7 +98,7 @@ input::placeholder {
   margin: 0 auto;
   margin-top: 50px;
   box-shadow: 5px 5px 19px 2px rgba(0, 0, 0, 0.63);
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .contact-form-input {
@@ -125,4 +125,23 @@ input::placeholder {
 
 .form-group-title {
   margin-bottom: 10px;
+}
+
+/* ---------------------Форма №3-------------------- */
+
+.form-label {
+  position: absolute;
+  top: 13%;
+  left: 30px;
+  transition: transform 200ms linear, color 200ms linear;
+}
+
+.form-input {
+  position: relative;
+}
+
+.contact-form-input:focus + .form-label,
+.contact-form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-30px) translateX(-20px);
+  color: #2196f3;
 }

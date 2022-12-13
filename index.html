@@ -13,7 +13,7 @@
 
 <body>
 
-    <form class="form js-speaker-form">
+    <!-- <form class="form js-speaker-form">
         <div class="form-field">
             <label for="name">Name</label>
             <input type="text" name="user-name" id="name" autofocus placeholder="Ivan Ivanovich" required>
@@ -101,6 +101,54 @@
         <input class="contact-form-input" type="email" placeholder="Your mail" name="Mail" required>
         <input class="contact-form-input" type="tel" placeholder="Your phone" name="Phone" required
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="000-000-00-00">
+
+        <div class="contact-form-group" role="group" aria-labelledby="age">
+            <p class="form-group-title" id="age">Your age</p>
+
+            <input class="contact-form-radio" type="radio" name="Age" value="18-25" id="age-1">
+            <label for="age-1">18-25</label>
+
+            <input class="contact-form-radio" type="radio" name="Age" value="26-35" id="age-2">
+            <label for="age-2">26-35</label>
+
+            <input class="contact-form-radio" type="radio" name="Age" value="36-50" id="age-3">
+            <label for="age-3">36-50</label>
+        </div>
+
+        <div class="contact-form-group" role="group" aria-labelledby="hobby">
+            <p class="form-group-title" id="hobby">Your hobby</p>
+
+            <input class="contact-form-radio" type="checkbox" name="hobby" value="foorboll" id="hobby-1">
+            <label for="hobby-1">footboll</label>
+
+            <input class="contact-form-radio" type="checkbox" name="hobby" value="basketboll" id="hobby-2">
+            <label for="hobby-2">basketboll</label>
+
+            <input class="contact-form-radio" type="checkbox" name="hobby" value="box" id="hobby-3">
+            <label for="hobby-3">box</label>
+        </div>
+
+        <textarea class="comments-area" name="comment" id="" rows="5" placeholder="Your message"></textarea>
+
+        <button class="contact-form-button" type="submit">Submit</button>
+    </form> -->
+
+    <form class="js-speaker-form contact-form">
+        <div class="form-input">
+            <input class="contact-form-input" type="text" placeholder=" " name="Name" id="name" required>
+            <label class="form-label" for="name">Name</label>
+        </div>
+
+        <div class="form-input">
+            <input class="contact-form-input" type="email" placeholder=" " name="Mail" required id="mail">
+            <label class="form-label" for="mail">Mail</label>
+        </div>
+
+        <div class="form-input">
+            <input class="contact-form-input" type="tel" placeholder=" " name="Phone" required id="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="000-000-00-00">
+            <label class="form-label" for="phone">Phone</label>
+        </div>
 
         <div class="contact-form-group" role="group" aria-labelledby="age">
             <p class="form-group-title" id="age">Your age</p>
