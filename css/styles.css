@@ -145,3 +145,11 @@ input::placeholder {
   transform: translateY(-30px) translateX(-20px);
   color: #2196f3;
 }
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  z-index: 1;
+}
