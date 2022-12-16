@@ -130,10 +130,12 @@ input::placeholder {
 /* ---------------------Форма №3-------------------- */
 
 .form-input {
+  display: block;
   margin-bottom: 20px;
 }
 
 .form-label {
+  color: #969696;
   position: absolute;
   top: 50%;
   left: 30px;
