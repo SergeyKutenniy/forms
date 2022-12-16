@@ -184,3 +184,62 @@ input::placeholder {
   display: flex;
   justify-content: space-around;
 }
+
+.checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.contact-form-radio:checked + .checkbox {
+  background-color: #2196f3;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #2196f3;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.radio {
+  border: 2px solid #2a2a2a;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+}
+.radio:after {
+  content: '';
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 7px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  height: 7px;
+}
+
+.contact-form-radio:checked + .radio {
+  border-color: #2196f3;
+}
+
+.contact-form-radio:checked + .radio:after {
+  display: block;
+}
