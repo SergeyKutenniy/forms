@@ -225,20 +225,28 @@
 
         <label class="modal-form-field">Name
             <span class="modal-form-wrapper">
-                <input type="text" class="modal-form-input" name="Name">
+                <input type="text" class="modal-form-input" name="Name" minlength="2" pattern="[а-яёА-ЯЁa-zA-Z]+"
+                    title="Имя должно содержать символы кириллицы или латиницы" required>
                 <span class="modal-form-icon"></span>
             </span>
         </label>
 
         <label class="modal-form-field">Phone
             <span class="modal-form-wrapper">
-                <input type="tel" class="modal-form-input" name="Phone">
+                <input type="tel" class="modal-form-input" name="Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                    title="0998887766" required>
                 <span class="modal-form-icon"></span>
             </span>
         </label>
 
         <label class="modal-form-field">Comments
-            <textarea class="modal-form-message" name="Comments"></textarea>
+            <textarea class="modal-form-message" name="Comments" placeholder="Input the text" rows="5"></textarea>
+        </label>
+
+        <input class="modal-form-check visually-hidden" type="checkbox" id="checkbox">
+        <label class="modal-form-checkbox" for="checkbox">
+            Соглашаюсь с рассылкой и&nbsp;
+            <a class="modal-form-checkbox-link" href="/">Условиями договора</a>
         </label>
 
         <button class="contact-form-button" type="submit">Submit</button>

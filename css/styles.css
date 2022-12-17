@@ -271,13 +271,78 @@ input::placeholder {
   left: 0;
   transform: translateY(-50%);
   margin-left: 10px;
+  transition: background-color 250ms linear;
 }
 
 .modal-form-input {
   width: 100%;
+  padding-left: 31px;
+  transition: border-color 250ms linear;
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  background-color: #2196f3;
 }
 
 .modal-form-wrapper {
   position: relative;
   display: block;
+}
+
+.modal-form-message:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.modal-form-message {
+  transition: border-color 250ms linear;
+}
+
+.modal-form-message::placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.modal-form-checkbox {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form-checkbox::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: outline 250ms linear;
+}
+
+.contact-form-button {
+  margin-top: 10px;
+}
+
+.modal-form-check:checked + .modal-form-checkbox::before {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+}
+
+.modal-form-check:focus + .modal-form-checkbox::before {
+  outline: 2px solid #2196f3;
+}
+
+.modal-form-checkbox-link {
+  color: #2196f3;
 }
