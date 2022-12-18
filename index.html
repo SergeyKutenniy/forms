@@ -13,7 +13,7 @@
 
 <body>
 
-    <!-- <form class="form js-speaker-form">
+    <form class="form js-speaker-form">
         <div class="form-field">
             <label for="name">Name</label>
             <input type="text" name="user-name" id="name" autofocus placeholder="Ivan Ivanovich" required>
@@ -131,9 +131,9 @@
         <textarea class="comments-area" name="comment" id="" rows="5" placeholder="Your message"></textarea>
 
         <button class="contact-form-button" type="submit">Submit</button>
-    </form> -->
+    </form>
 
-    <!-- <form class="js-speaker-form contact-form">
+    <form class="js-speaker-form contact-form">
 
         <label class="form-input">
             <input class="contact-form-input" type="text" placeholder=" " name="Name" required>
@@ -216,7 +216,7 @@
         <textarea class="comments-area" name="comment" id="" rows="5" placeholder="Your message"></textarea>
 
         <button class="contact-form-button" type="submit">Submit</button>
-    </form> -->
+    </form>
 
 
     <form class="js-speaker-form contact-form">
@@ -251,6 +251,27 @@
 
         <button class="contact-form-button" type="submit">Submit</button>
 
+    </form>
+
+
+    <form class="form-autocheck" action="javascript:void(0);" method="POST">
+        <label class="autocheck-label">
+            <span>Имя</span>
+            <input class="form-autocheck-input" type="text" name="name" placeholder="Имя" />
+        </label>
+        <label class="autocheck-label">
+            <span>Почта</span>
+            <input class="form-autocheck-input" type="email" name="email" required placeholder="Электронная почта" />
+        </label>
+        <label class="autocheck-label">
+            <span>Пароль</span>
+            <input class="form-autocheck-input" type="password" name="password" required
+                placeholder="Пароль от 3 до 5 символов" pattern=".{3,5}" title="от 3 до 5 символов" />
+        </label>
+        <div class="buttons">
+            <button class="form-autocheck-btn" type="submit">отправить</button>
+            <button class="form-autocheck-btn" type="reset">обновить</button>
+        </div>
     </form>
 
     <script>
